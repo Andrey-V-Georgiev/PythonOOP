@@ -6,8 +6,8 @@ from project.card.card_repository import CardRepository
 class Player(ABC):
     @abstractmethod
     def __init__(self, username: str, health: int):
-        self.__username = username
-        self.__health = health
+        self.username = username
+        self.health = health
         self.card_repository = CardRepository()
 
     @property

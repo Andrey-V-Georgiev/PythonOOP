@@ -4,9 +4,9 @@ from abc import ABC, abstractmethod
 class Card(ABC):
     @abstractmethod
     def __init__(self, name: str, damage_points: int, health_points: int):
-        self.__name = name
-        self.__damage_points = damage_points
-        self.__health_points = health_points
+        self.name = name
+        self.damage_points = damage_points
+        self.health_points = health_points
 
     @property
     def name(self):
