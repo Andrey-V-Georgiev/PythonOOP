@@ -37,4 +37,4 @@ class Player(ABC):
     def take_damage(self, damage_points: int):
         if damage_points < 0:
             raise ValueError("Damage points cannot be less than zero.")
-        self.health -= damage_points
+        self.__health -= damage_points
